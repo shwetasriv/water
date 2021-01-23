@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+	 body {
+        background-color: cyan;
+        color: blue;
+        font-family:arial;
+        margin: 0;
+    }
+   </style>
+ </head>
+ <body onload="hideAllQuestions()">
+  <h1><center>Take this quiz to be a millionare!</center></h1>
+  <h2><center>There are 6 questions and if you get all of them right, you win a million dollars and you can only get to the next question if you get the previous one right(You are not really going to win one million dollars)</center></h2>
+  <!-- This is question one -->
+  <h1 id="header1" visible="false">How many people lack access to clean water | Question value | 10 $</h1><textarea visible="false" id="answer1" onchange="functionOne()"></textarea>
+  <label id="result1" visible="false"></label>
+  <!-- This is question two -->
+  <h1 id="header2">How many in 3 schools lack access to clean water | Question value | 100 $</h1><textarea id="answer2" onchange="functionTwo()"></textarea>
+  <label id="result2" visible="false" style.visibility = ></label>
+  <!-- This is question three -->	
+  <h1 id="header3">Every __ minutes a child dies from a water-related disease | Question value | 1000 $</h1><textarea id="answer3" onchange="functionThree()"></textarea>
+  <label id="result3" visible="false"></label>
+  <!-- This is question four -->
+  <h1 id="header4">Who does the water crisis effect more men or women | Question value | 10000 $</h1><textarea id="answer4" onchange="functionFour()"></textarea>
+  <label id="result4" visible=></label>
+  <!-- This is question five -->
+  <h1 id="header5">For how many hours each day, women collect clean water for the toilet | Question value | 100000 $</h1><textarea id="answer5" onchange="functionFive()"></textarea>                                     
+  <label id="result5" visible="false"></label>
+  <!-- This is question six -->
+  <h1 id="header6">How many minutes should you take a shower every day | Question value | 1000000 $</h1><textarea id="answer6" onchange="functionSix()"></textarea><br /><h1 id="Congratulations" visible="false">Congratulations you won a million dollars!</h1>
+  <label id="result6" visible="false"></label>	
+  <script type="text/javascript">
+function hideAllQuestions() {
+	document.getElementById('header2').style.visibility = 'hidden';
+	document.getElementById('header3').style.visibility = 'hidden';
+	document.getElementById('header4').style.visibility = 'hidden';
+	document.getElementById('header5').style.visibility = 'hidden';
+	document.getElementById('header6').style.visibility = 'hidden';
+	document.getElementById('answer2').style.visibility = 'hidden';
+	document.getElementById('answer3').style.visibility = 'hidden';
+	document.getElementById('answer4').style.visibility = 'hidden';
+	document.getElementById('answer5').style.visibility = 'hidden';
+	document.getElementById('answer6').style.visibility = 'hidden';
+	document.getElementById('Congratulations').style.visibility = 'hidden';
+
+}
+
+function functionOne() {
+	if ("785 million" == document.getElementById('answer1').value) {
+			document.getElementById('result1').visible = 'true';
+			document.getElementById('result1').innerText = 'correct';
+			document.getElementById('header2').style.visibility = 'visible';
+			document.getElementById('answer2').style.visibility = 'visible';
+} else  {
+	    document.getElementById('result1').visible = 'true';
+	    document.getElementById('result1').innerText = 'This is incorrect. The answer is 785 Million.';
+	}
+}
+function functionTwo() {
+	if ("1 in 3" == document.getElementById('answer2').value) {
+			document.getElementById('result2').visible = 'true';
+			document.getElementById('result2').innerText = 'correct';
+			document.getElementById('header3').style.visibility = 'visible';
+			document.getElementById('answer3').style.visibility = 'visible';
+	} else
+		{
+	    document.getElementById('result2').visible = 'true';
+	    document.getElementById('result2').innerText = 'This is incorrect. The answer is 1 in 3';
+	}
+}
+function functionThree() {
+	if ("2" == document.getElementById('answer3').value) {
+			document.getElementById('result3').visible = 'true';
+			document.getElementById('result3').innerText = 'correct';
+			document.getElementById('header4').style.visibility = 'visible';
+			document.getElementById('answer4').style.visibility = 'visible';
+	} else {
+	    document.getElementById('result3').visible = 'true';
+	    document.getElementById('result3').innerText = 'This is incorrect. The answer is 2';
+	}
+}
+function functionFour() {
+	if ("women" == document.getElementById('answer4').value) {
+			document.getElementById('result4').visible = 'true';
+			document.getElementById('result4').innerText = 'correct';
+			document.getElementById('header5').style.visibility = 'visible';
+			document.getElementById('answer5').style.visibility = 'visible';
+	} else {
+	    document.getElementById('result4').visible = 'true';
+	    document.getElementById('result4').innerText = 'This is incorrect. The answer is women';
+	}
+}
+function functionFive() {
+	if ("266 million" == document.getElementById('answer5').value) {
+			document.getElementById('result5').visible = 'true';
+			document.getElementById('result5').innerText = 'correct';
+			document.getElementById('header6').style.visibility = 'visible';
+			document.getElementById('answer6').style.visibility = 'visible';
+	} else {
+	    document.getElementById('result5').visible = 'true';
+	    document.getElementById('result5').innerText = 'This is incorrect. The answer is 266 million';
+	}
+}
+function functionSix() {
+	if ("5 minutes" == document.getElementById('answer6').value) {
+			document.getElementById('result6').visible = 'true';
+			document.getElementById('result6').innerText = 'correct';
+			document.getElementById('Congratulations').style.visibility = 'visible'
+	} else {
+	    document.getElementById('result6').visible = 'true';
+	    document.getElementById('result6').innerText = 'This is incorrect. The answer is 5 minutes';
+	}
+}
+ </script>       
+</html>
+ 
