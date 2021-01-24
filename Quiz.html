@@ -48,7 +48,7 @@ function hideAllQuestions() {
 }
 
 function functionOne() {
-	if ("785 million" == document.getElementById('answer1').value) {
+	if ("785 million" == document.getElementById('answer1').value.toLowerCase()) {
 			document.getElementById('result1').visible = 'true';
 			document.getElementById('result1').innerText = 'correct';
 			document.getElementById('header2').style.visibility = 'visible';
@@ -59,7 +59,7 @@ function functionOne() {
 	}
 }
 function functionTwo() {
-	if ("1 in 3" == document.getElementById('answer2').value) {
+	if ("1 in 3" == document.getElementById('answer2').value.toLowerCase()) {
 			document.getElementById('result2').visible = 'true';
 			document.getElementById('result2').innerText = 'correct';
 			document.getElementById('header3').style.visibility = 'visible';
@@ -82,7 +82,7 @@ function functionThree() {
 	}
 }
 function functionFour() {
-	if ("women" == document.getElementById('answer4').value) {
+	if ("women" == document.getElementById('answer4').value.toLowerCase()) {
 			document.getElementById('result4').visible = 'true';
 			document.getElementById('result4').innerText = 'correct';
 			document.getElementById('header5').style.visibility = 'visible';
@@ -93,7 +93,7 @@ function functionFour() {
 	}
 }
 function functionFive() {
-	if ("266 million" == document.getElementById('answer5').value) {
+	if ("266 million" == document.getElementById('answer5').value.toLowerCase()) {
 			document.getElementById('result5').visible = 'true';
 			document.getElementById('result5').innerText = 'correct';
 			document.getElementById('header6').style.visibility = 'visible';
@@ -104,7 +104,7 @@ function functionFive() {
 	}
 }
 function functionSix() {
-	if ("5 minutes" == document.getElementById('answer6').value) {
+	if ("5 minutes" == document.getElementById('answer6').value.toLowerCase()) {
 			document.getElementById('result6').visible = 'true';
 			document.getElementById('result6').innerText = 'correct';
 			document.getElementById('Congratulations').style.visibility = 'visible'
